@@ -215,12 +215,10 @@ pre {
  * Site footer  **********************************************************
  */
 .site-footer {
-  border-top: 1px solid #333;
+  border-top: 1px solid #e3e3e3;
   font-size: 10px;
-  background-color: #333;
   padding: 2px;
   color: #aaa;
-  position: fixed;
   left: 0px;
   bottom: 0px;
   width: 100%; }
@@ -246,10 +244,6 @@ pre {
 /**
  * Page content   **********************************************************
  */
-.page-content {
-  padding: 100px 0;
-  /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
-
 .page-heading {
   font-size: 20px; }
 
@@ -260,7 +254,7 @@ pre {
     margin-bottom: 40px; }
 
 .contacticon {
-  font-size: 60px;
+  font-size: 36px;
   display: block;
   margin: 10px; }
 
@@ -334,10 +328,15 @@ pre {
   width: 100%; }
 
 .top-section {
-  text-align: center; }
+  text-align: center;
+  padding-top: 100px; }
 
 .profile-pic {
   width: 160px; }
+
+.resume-wrapper {
+  padding-top: 56px;
+  margin-bottom: -8px; }
 
 /**
  * Portfolio pages **********************************************************
