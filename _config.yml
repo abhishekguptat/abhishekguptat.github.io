@@ -16,7 +16,7 @@
 title: Abhishek Gupta's Portfolio
 email: abhishekgupta.t@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Abhishek Gupta is an experienced UX Designer with entrepreneurial spirit. He has worked with Truecaller, Sweden and he has studied at IIT Roorkee.
+  Abhishek Gupta is an experienced UX Designer with entrepreneurial spirit. He has worked with Truecaller, Sweden and studied at IIT Roorkee.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: abhishekgpta
