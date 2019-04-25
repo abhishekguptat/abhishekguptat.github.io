@@ -148,6 +148,39 @@ padding-top: 40px;
   width: 100%;
 }
 
+#up-btn-wrap {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.up-btn {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  background-color: $grey-color-extra-light;
+  font-weight: 600;
+  background-image: url(/img/up.png);
+  background-repeat: no-repeat;
+  background-size: 120px;
+  border: 6px $grey-color-extra-light solid;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 120px;
+}
+
+.fas {
+  font-size: 32px;
+  color: $grey-color-light;
+  padding-top: 40px;
+}
 
 
 
