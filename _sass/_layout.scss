@@ -3,9 +3,9 @@
  * Site header   **********************************************************
  */
 .site-header {
-border-bottom: 1px solid $grey-color-light;
+border-bottom: 1px solid $grey-color-extra-light;
 background-color: #fff;
-opacity: 0.75;
+opacity: 0.9;
 position:fixed;
 left:0px;
 top:0px;
@@ -25,50 +25,94 @@ color: $theme-color;
     }
 }
 .site-nav {
-float: right;
-line-height: $nav-height;
-.page-link{
-line-height: $base-line-height;
-        // Gaps between nav items, but not on the first one
-&:not(:first-child) {
-margin-left: 10px;
-        }
+  line-height: $nav-height;
+
+  .page-link{
+    line-height: $base-line-height;
+    display: line;
+    margin-right: 20px;
+  }
+
+  .page-link:first-child {
+    font-weight: 700;
+  }
+
+  .social-links {
+    float: right;
+
+    a {
+      background-color: $grey-color-extra-light;
+      padding: 4px 12px 4px 12px;
     }
-@include media-query($on-palm) {
-position: fixed;
-top: 0px;
-right: 10px;
-text-align: right;
-&:hover .trigger {
-display: block;
-padding-bottom: 5px;
-        }
-.page-link {
-display: line;
-        }
+    i {
+      color: #0077B5;
     }
+  }
+}
+/* Profile summary *********************************************/
+
+.profile-summary {
+  padding: 156px 0 240px 0;
+  h1 {
+    line-height: 1.6;
+  }
+  h1 span {
+    font-weight: 400;
+    color: $theme-color;
+  }
 }
 
-.header-bar{
-    left: 0px;
-    top: 0px;
-    position: relative;
-    font-size: 20px;
-    display: block;
-    opacity: 0.75;
-    width: 100%;
-    text-align: center;
-    padding-top: 25px;
-    line-height: 3em;
-    z-index: 25;
-    h1{
-        color: $theme-color;
-        font-size:75px;
-    }
-    h2{
-        font-size:25px;
-    }
+/* Projects *********************************************/
+
+.projects {
+padding-top: 40px;
 }
+.section-title {
+  text-transform: uppercase;
+  color: $theme-color;
+  font-weight: 700;
+}
+.project {
+  margin: 60px 0 120px 0;
+
+  .text-block {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    .project-title {
+      margin-bottom: 18px;
+      font-weight: 400;
+
+      span {
+        background-color: $grey-color-extra-light;
+      }
+    }
+    .project-desc {
+      margin-bottom: 18px;
+    }
+  }
+  .has-background {
+    background-color: $grey-color-extra-light;
+    padding: 40px;
+
+    .phone-chassis {
+      width: 100%;
+      border: 8px $grey-color-dark solid;
+      border-top-width: 48px;
+      border-bottom-width: 48px;
+      border-radius: 36px;
+    }
+  }
+}
+.full-width-image img {
+  width: 100%;
+}
+.phone-chassis img {
+  width: 100%;
+}
+
+
+
 
 /**
  * Site footer  **********************************************************
@@ -87,101 +131,13 @@ width:100%;
     margin-bottom: 0; // Remove margin set in _sass/_base.scss for vertical rythm
 }
 
-/**
- * Pagination   **********************************************************
- */
-.pagination{
-max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-text-align: center;
-width: 100%;
-position: fixed;
-bottom: 50px;
-}
-.paginationicon {
-font-size: 50px;
-a {
-color: $theme-color;
-    }
-}
-/**
- * Page content   **********************************************************
- */
-.page-heading {
-font-size: 20px;
-}
-.post-list {
-margin: 0px 0;
-list-style: none;
-    > li {
-margin-bottom: $vertical-spacing-unit;
-    }
-}
-.contacticon {
-font-size: 36px;
-display:block;
-margin: 10px;
-}
-.center{
-text-align: center;
-}
-/**
- * Posts  **********************************************************
- */
-.post-header {
-margin-bottom: $vertical-spacing-unit;
-}
-.post-title {
-font-size: 42px;
-letter-spacing: -1px;
-line-height: 1;
-@include media-query($on-laptop) {
-font-size: 36px;
-    }
-}
-.post-content {
-h2 {
-font-size: 42px;
-@include media-query($on-laptop) {
-font-size: 28px;
-        }
-    }
-h3 {
-font-size: 30px;
-@include media-query($on-laptop) {
-font-size: 22px;
-        }
-    }
-h4 {
-font-size: 20px;
-@include media-query($on-laptop) {
-font-size: 18px;
-        }
-    }
-}
-.post-meta {
-font-size: $small-font-size;
-color: $grey-color;
-margin-bottom: 0px;
-}
-.post-link {
-display: block;
-font-size: 42px;
+// Resume page
+
+.resume-wrapper {
+  padding-top: 56px;
+  margin-bottom: -8px;
 }
 
-/** Poem formatting ********************************************/
-.poem-title {
-font-size: 24px;
-letter-spacing: -1px;
-line-height: 1;
-@include media-query($on-laptop) {
-font-size: 16px;
-    }
-}
-
-
-/**
- * Portfolio grid **********************************************************
-*/
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
@@ -191,65 +147,4 @@ display: table;
 }
 .clearfix:after {
 clear: both;
-}
-.projects {
-padding-top: 40px;
-text-align: center;
-}
-.project {
-
-}
-.portrait {
-  width: 100%;
-}
-.top-section {
-  text-align: center;
-  padding-top: 100px;
-}
-.profile-pic {
-  width: 160px;
-}
-.resume-wrapper {
-  padding-top: 56px;
-  margin-bottom: -8px;
-}
-/**
- * Portfolio pages **********************************************************
-*/
-.blankbox{
-background: $theme-color;
-}
-.img_row{
-height: $img_height;
-width: 100%;
-overflow: hidden;
-box-sizing:border-box;
-padding: $img_spacing;
-}
-.col{
-width: 100%;
-height: 100%;
-float: left;
-object-fit: cover;
-box-sizing:border-box;
-padding: $img_spacing;
-}
-.right{
-float: right;
-}
-.one {
-width:33.33%;
-}
-.two {
-width: 66.66%;
-}
-.three{
-width: 100%;
-}
-.caption{
-height: 100%;
-color: $caption_color;
-text-align: center;
-vertical-align: middle;
-font-size: $caption_font_size;
 }

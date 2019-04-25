@@ -9,26 +9,24 @@
     <title>Abhishek Gupta - Product+UX Designer</title>
     <meta name="description" content="An experienced designer with entrepreneurial spirit. Worked with Truecaller and studied at IIT Roorkee.
 ">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
-
     <link rel="canonical" href="http://localhost:4000/">
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
 </head>
 
 
   <body>
 
-    <header class="site-header">
+    <header class="container-fluid site-header">
 
-  <div class="wrapper">
-
-    <nav class="site-nav">
-
-      <div class="trigger">
-        <!-- Abhishek Gupta - Product+UX Designer instead of blog -->
-        <a class="page-link" href="/">home</a>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <nav class="site-nav">
+        <a class="page-link" href="/">Abhishek Gupta</a>
 
         
           
@@ -38,71 +36,114 @@
           
         
           
-          <a class="page-link" href="/resume/">resume</a>
+          <a class="page-link" href="/resume/">Resume</a>
           
         
           
         
-
-      </div>
-    </nav>
-
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/abhishekgpta/" target="_blank"><i class="fab fa-linkedin-in"></i> &nbsp; Say hello on Linkedin!</a>
+        </div>
+      </nav>
+    </div>
   </div>
 
 </header>
 
 
     <div>
-        <div class="container-fluid top-section">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <img class="profile-pic" src="/img/abhishek_round.png" alt="profile pic">
-      <div class="header-bar">
-        <h1>Abhishek Gupta - Product+UX Designer</h1>
+        <div class="container-fluid">
+  <div id="profile-summary" class="profile-summary">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-1">
+        <h1><span>Product Designer</span> focused on creating digital experiences that empower people and solve real-world problems.</h1>
       </div>
-      <br/><br/>
-      <p> <b>Design products. Care customers. Think business.</b> <br/><br/>
-      A full-stack designer with 8+ years of experience who believes that creation process when seen through the frame of design is a balanced concoction of problem-solving, creating delight, creating sustainable differences and meeting business objectives.
-      I lead and participate in the process of finding better solutions to the product and process related challenges in a business with design thinking and execution and help it grow.
-      </p>
     </div>
   </div>
-</div>
-<hr>
-<div class="container projects">
-  <h1>Recent Projects</h1>
-  <br/><br/>
-  <div class="project">
+  <div id="projects" class="projects">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h2>Whatshot (Times Internet) Android & iOS Apps</h2>
-        <br/>
-        <p>Whatshot needed a complete overhaul of their apps and website, a highly visual way of delivering content to users. I worked on the design of Whatshot apps which was very video-focused.</p>
-        <p>Also worked on Whatshot website design and actively managed the design process and implementation of all of these.</p>
+      <div class="col-md-11 col-md-offset-1">
+        <h4 class="section-title">Recent Work</h4>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <img class="portrait" src="/img/wh_01.png" alt="Project Image">
+
+    <!-- Project 1 - Truecaller -->
+
+    <div id="project1"class="project">
+      <div class="row text-block">
+        <div class="col-md-6 col-md-offset-1">
+          <h2 class="project-title"><span>Truecaller</span></h2>
+          <div class="project-desc">
+            <p>Designed Instant Messaging in Truecaller as first ever messaging service similar to iMessage (SMS+Chat) for Android platform
+Acted as a strong bridge between Product & Engineering teams to envision, design and deliver improved user experience for existing features and also build new features</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img class="portrait" src="/img/wh_02.png" alt="Project Image">
+      <div class="row has-background">
+        <div class="col-md-12">
+          <figure class="full-width-image">
+            <img src="/img/tc_01.png" alt="Project Image">
+          </figure>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img class="portrait" src="/img/wh_03.png" alt="Project Image">
+      <div class="row has-background">
+        <div class="col-md-12">
+          <figure class="full-width-image">
+            <img src="/img/tc_02.png" alt="Project Image">
+          </figure>
+        </div>
       </div>
     </div>
+
+    <!-- Project 2 - Times Internet -->
+
+    <div id="project2" class="project">
+      <div class="row project-header text-block">
+        <div class="col-md-6 col-md-offset-1">
+          <h2 class="project-title"><span>Whatshot (Times Internet) Android & iOS Apps</span></h2>
+          <div class="project-desc">
+            <p>Whatshot needed a complete overhaul of their apps and website, a highly visual way of delivering content to users. I worked on the design of Whatshot apps which was very video-focused. Also worked on Whatshot website design and actively managed the design process and implementation of all of these.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row has-background">
+        <div class="col-md-4">
+          <figure class="phone-chassis">
+            <img src="/img/wh_01.png" alt="Project Image">
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="phone-chassis">
+            <img src="/img/wh_02.png" alt="Project Image">
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="phone-chassis">
+            <img src="/img/wh_03.png" alt="Project Image">
+          </figure>
+        </div>
+      </div>
+      <div class="row has-background">
+        <div class="col-md-4">
+          <figure class="phone-chassis">
+            <img src="/img/wh_04.png" alt="Project Image">
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="phone-chassis">
+            <img src="/img/wh_05.png" alt="Project Image">
+          </figure>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
     </div>
 
     <footer class="site-footer">
-  <span class="contacticon center">
-  	<a href="mailto:abhishekgupta.t@gmail.com"><i class="fa fa-envelope-square"></i></a>
-  	<a href="https://www.linkedin.com/in/abhishekgpta/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-  	<a href="https://twitter.com/abhishekgpta" target="_blank"><i class="fa fa-twitter-square"></i></a>
-  </span>
+  
 </footer>
 
 
