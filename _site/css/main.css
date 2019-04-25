@@ -36,9 +36,8 @@ figure > img {
 figcaption {
   font-size: 14px; }
 
-li > ul,
-li > ol {
-  margin-bottom: 0; }
+ul {
+  list-style-type: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200; }
@@ -90,7 +89,8 @@ a {
     float: right; }
     .site-nav .social-links a {
       background-color: #ededed;
-      padding: 4px 12px 4px 12px; }
+      padding: 4px 12px 4px 12px;
+      border-radius: 2px; }
     .site-nav .social-links i {
       color: #0077B5; }
 
@@ -110,7 +110,31 @@ a {
 .section-title {
   text-transform: uppercase;
   color: #FF3636;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 32px; }
+
+.project-nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 4px 12px 4px 12px;
+  margin-right: 4px;
+  background-color: #FF3636;
+  font-weight: 400;
+  border-radius: 2px;
+  font-size: 14px; }
+.project-nav ul li a {
+  color: #fff; }
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  height: 80px;
+  padding: 16px 0 0 0;
+  border-bottom: 1px #ededed solid; }
 
 .project {
   margin: 60px 0 120px 0; }
@@ -144,16 +168,18 @@ a {
  * Site footer  **********************************************************
  */
 .site-footer {
+  background-color: #FF3636;
+  text-align: center;
   border-top: 1px solid #e3e3e3;
-  font-size: 10px;
-  padding: 2px;
-  color: #aaa;
-  left: 0px;
-  bottom: 0px;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 8px;
+  color: #fff;
   width: 100%; }
 
-.site-footer p {
-  margin-bottom: 0; }
+.site-footer a {
+  color: #fff;
+  font-weight: 700; }
 
 .resume-wrapper {
   padding-top: 56px;

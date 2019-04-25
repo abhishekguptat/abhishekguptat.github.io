@@ -63,11 +63,8 @@ figcaption {
     font-size: $small-font-size;
 }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+ul {
+  list-style-type: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
