@@ -80,13 +80,19 @@ padding-top: 40px;
     display: inline-block;
     text-transform: uppercase;
     padding: 4px 12px 4px 12px;
-    margin-right: 4px;
-    background-color: $theme-color;
+    margin: 8px 4px 8px 0;
     font-weight: 400;
+    border: 1px $grey-color-dark solid;
     border-radius: 2px;
     font-size: 14px;
   }
-  ul li a {
+}
+
+.project-nav ul li.active-nav {
+  background-color: $red;
+  border: 1px $theme-color solid;
+
+  a {
     color: #fff;
   }
 }

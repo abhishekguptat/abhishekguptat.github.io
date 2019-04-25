@@ -117,13 +117,17 @@ a {
   display: inline-block;
   text-transform: uppercase;
   padding: 4px 12px 4px 12px;
-  margin-right: 4px;
-  background-color: #FF3636;
+  margin: 8px 4px 8px 0;
   font-weight: 400;
+  border: 1px #333 solid;
   border-radius: 2px;
   font-size: 14px; }
-.project-nav ul li a {
-  color: #fff; }
+
+.project-nav ul li.active-nav {
+  background-color: #FF3636;
+  border: 1px #FF3636 solid; }
+  .project-nav ul li.active-nav a {
+    color: #fff; }
 
 .fixed-nav {
   position: fixed;

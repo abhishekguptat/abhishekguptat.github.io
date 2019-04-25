@@ -11,6 +11,20 @@ $(document).ready(function(){
     } else {
       sticky.removeClass('fixed-nav');
     }
+
+// Active nav
+
+    var o1 = $("#project1").offset().top;
+    var o2 = $("#project2").offset().top;
+    var o3 = $("#project3").offset().top;
+    var o4 = $("#project4").offset().top;
+    var o5 = $("#project5").offset().top;
+
+    if (scroll >= o1 & scroll <= o2) {
+      $("#project-nav1").addClass('active-nav');
+    } else {
+      $("#project-nav1").removeClass('active-nav');
+    }
   });
 
   // Smooth scroll
