@@ -70,7 +70,7 @@ a {
 .site-header {
   border-bottom: 1px solid #ededed;
   background-color: #fff;
-  opacity: 0.9;
+  opacity: 0.97;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -123,15 +123,17 @@ a {
   font-weight: 700;
   margin-bottom: 32px; }
 
-.project-nav ul li {
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 4px 12px 4px 12px;
-  margin: 8px 4px 8px 0;
-  font-weight: 400;
-  border: 1px #333 solid;
-  border-radius: 2px;
-  font-size: 14px; }
+.project-nav {
+  height: auto; }
+  .project-nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 4px 12px 4px 12px;
+    margin: 4px 4px 4px 0;
+    font-weight: 400;
+    border: 1px #333 solid;
+    border-radius: 2px;
+    font-size: 14px; }
 
 .project-nav ul li.active-nav {
   background-color: #FF3636;
@@ -146,8 +148,8 @@ a {
   width: 100%;
   z-index: 99;
   background-color: #fff;
-  height: 80px;
-  padding: 16px 0 0 0;
+  padding: 8px 0 8px 0;
+  margin-left: 0;
   border-bottom: 1px #ededed solid; }
 
 .project {
@@ -171,7 +173,8 @@ a {
       border: 8px #333 solid;
       border-top-width: 48px;
       border-bottom-width: 48px;
-      border-radius: 36px; }
+      border-radius: 36px;
+      margin-bottom: 12px; }
 
 .full-width-image img {
   width: 100%; }
