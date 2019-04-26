@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+  // Function to find if an element is in viewport
+  $.fn.isInViewPort = function() {
+    // For element's bottom to be visible
+    // scroll length of window >= element offset - window height + element height
+    var scrollPos = $(window).scrollTop();
+    var elementOffset = $(this).offset().top;
+    var windowHeight = $(window).height();
+    var elementHeight = $(this).outerHeight();
+
+    return scrollPos >= elementOffset - windowHeight + elementHeight;
+  };
+
   // Sticky navigation
   const sticky = $("#project-nav");
   const stickyOffset = sticky.offset().top;
@@ -12,7 +24,17 @@ $(document).ready(function(){
       sticky.removeClass('fixed-nav');
     }
 
+// Check if projects are in viewport and animate
+
+$('.project .text-block').each(function() {
+  if ($(this).isInViewPort()) {
+    $(this).addClass('animate-pop-in');
+  }
+});
+
+
 // Progress indicator
+
 var pageHeight = $(document).height() - 421;
 var scrollPercentage = scroll/pageHeight*100;
 console.log(pageHeight-scroll);
