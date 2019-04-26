@@ -54,6 +54,15 @@ a {
     color: #b9b9b9;
     text-decoration: none; }
 
+.progress-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  z-index: 999;
+  background-color: #ededed;
+  border-right: 16px #FF3636 solid; }
+
 /**
  * Site header   **********************************************************
  */

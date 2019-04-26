@@ -12,6 +12,14 @@ $(document).ready(function(){
       sticky.removeClass('fixed-nav');
     }
 
+// Progress indicator
+var pageHeight = $(document).height() - 421;
+var scrollPercentage = scroll/pageHeight*100;
+console.log(pageHeight-scroll);
+$('.progress-indicator').css("width", scrollPercentage + '%');
+
+
+
 // Active nav
 
     var o1 = $("#project1").offset().top;
