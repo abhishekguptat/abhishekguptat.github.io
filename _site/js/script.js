@@ -19,9 +19,9 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if (scroll >= stickyOffset) {
-      sticky.addClass('fixed-nav');
+      sticky.addClass('fixed-nav animate-pop-in');
     } else {
-      sticky.removeClass('fixed-nav');
+      sticky.removeClass('fixed-nav animate-pop-in');
     }
 
 // Check if projects are in viewport and animate
