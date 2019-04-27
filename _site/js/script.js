@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+  //Set height of phone chassis based on aspect ratio of Image
+  $(".phone-chassis").each(function() {
+    var x = $(this).width();
+    var y = (x - 16)*16/9;
+    $(this).css("height", y + 120);
+  });
+
+
   // Function to find if an element is in viewport
   $.fn.isInViewPort = function() {
     // For element's bottom to be visible
