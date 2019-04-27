@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
   //Set height of phone chassis based on aspect ratio of Image
@@ -17,7 +18,7 @@ $(document).ready(function(){
     var windowHeight = $(window).height();
     var elementHeight = $(this).outerHeight();
 
-    return scrollPos >= elementOffset - windowHeight + elementHeight;
+    return scrollPos >= elementOffset - windowHeight;
   };
 
   // Sticky navigation
