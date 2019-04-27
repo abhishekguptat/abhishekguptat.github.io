@@ -173,7 +173,7 @@ a {
     background-color: #ededed;
     padding: 40px; }
     .project .has-background .phone-chassis {
-      width: 80%;
+      width: 90%;
       border: 8px #333 solid;
       border-top-width: 48px;
       border-bottom-width: 48px;
@@ -188,7 +188,7 @@ a {
 
 #up-btn-wrap {
   text-align: center;
-  margin-bottom: 80px; }
+  margin-bottom: 120px; }
 
 .up-btn {
   position: relative;
