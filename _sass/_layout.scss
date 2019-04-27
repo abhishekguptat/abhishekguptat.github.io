@@ -152,6 +152,8 @@ padding-top: 40px;
 
     .phone-chassis {
       width: 90%;
+      height: 0;
+      padding-bottom: 120%;
       border: 8px $grey-color-dark solid;
       border-top-width: 48px;
       border-bottom-width: 48px;
