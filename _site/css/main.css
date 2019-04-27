@@ -30,8 +30,8 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
-figure > img {
-  display: block; }
+figure {
+  display: inline-block; }
 
 figcaption {
   font-size: 14px; }
@@ -134,6 +134,8 @@ a {
     border: 1px #333 solid;
     border-radius: 2px;
     font-size: 14px; }
+  .project-nav ul li:hover {
+    border: 1px #b9b9b9 solid; }
 
 .project-nav ul li.active-nav {
   background-color: #FF3636;
@@ -143,14 +145,14 @@ a {
 
 .fixed-nav {
   position: fixed;
-  top: 56px;
   left: 0;
   width: 100%;
   z-index: 99;
   background-color: #fff;
   padding: 8px 0 8px 0;
   margin-left: 0;
-  border-bottom: 1px #ededed solid; }
+  border-bottom: 1px #ededed solid;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); }
 
 .project {
   margin: 60px 0 120px 0; }
@@ -169,7 +171,7 @@ a {
     background-color: #ededed;
     padding: 40px; }
     .project .has-background .phone-chassis {
-      width: 100%;
+      width: 80%;
       border: 8px #333 solid;
       border-top-width: 48px;
       border-bottom-width: 48px;
@@ -184,34 +186,29 @@ a {
 
 #up-btn-wrap {
   text-align: center;
-  margin-bottom: 24px; }
+  margin-bottom: 80px; }
 
 .up-btn {
   position: relative;
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   border-radius: 120px;
-  background-color: #ededed;
+  background-color: #fff;
   font-weight: 600;
-  background-image: url(/img/up.png);
   background-repeat: no-repeat;
   background-size: 120px;
   border: 6px #ededed solid; }
 
-.layer {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 120px; }
+.up-btn:hover {
+  border-color: #FF3636; }
+  .up-btn:hover .fas {
+    color: #FF3636; }
 
 .fas {
-  font-size: 32px;
-  color: #b9b9b9;
-  padding-top: 40px; }
+  font-size: 24px;
+  color: #ededed;
+  padding-top: 10px; }
 
 /**
  * Site footer  **********************************************************
@@ -243,3 +240,6 @@ a {
     transform: none; } }
 .animate-pop-in {
   animation: pop-in 1s ease-out forwards; }
+
+.center {
+  text-align: center; }

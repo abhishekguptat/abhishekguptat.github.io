@@ -99,6 +99,10 @@ padding-top: 40px;
     border-radius: 2px;
     font-size: 14px;
   }
+
+  ul li:hover {
+    border: 1px $grey-color-light solid;
+  }
 }
 
 .project-nav ul li.active-nav {
@@ -112,7 +116,6 @@ padding-top: 40px;
 
 .fixed-nav {
   position: fixed;
-  top: 56px;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -120,6 +123,7 @@ padding-top: 40px;
   padding: 8px 0 8px 0;
   margin-left: 0;
   border-bottom: 1px $grey-color-extra-light solid;
+  box-shadow: 0 -1px 4px rgba(0,0,0,.1);
 }
 
 .project {
@@ -147,7 +151,7 @@ padding-top: 40px;
     padding: 40px;
 
     .phone-chassis {
-      width: 100%;
+      width: 80%;
       border: 8px $grey-color-dark solid;
       border-top-width: 48px;
       border-bottom-width: 48px;
@@ -165,36 +169,33 @@ padding-top: 40px;
 
 #up-btn-wrap {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 80px;
 }
 .up-btn {
   position: relative;
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   border-radius: 120px;
-  background-color: $grey-color-extra-light;
+  background-color: #fff;
   font-weight: 600;
-  background-image: url(/img/up.png);
   background-repeat: no-repeat;
   background-size: 120px;
   border: 6px $grey-color-extra-light solid;
 }
 
-.layer {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 120px;
+.up-btn:hover {
+  border-color: $theme-color;
+
+  .fas {
+    color: $theme-color;
+  }
 }
 
 .fas {
-  font-size: 32px;
-  color: $grey-color-light;
-  padding-top: 40px;
+  font-size: 24px;
+  color: $grey-color-extra-light;
+  padding-top: 10px;
 }
 
 
@@ -240,4 +241,11 @@ padding-top: 40px;
 
 .animate-pop-in {
   animation: pop-in 1s ease-out forwards;
+}
+
+
+// Utility classes
+
+.center {
+  text-align: center;
 }

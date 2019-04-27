@@ -35,14 +35,22 @@ $('.project .text-block').each(function() {
 
 // Progress indicator
 
-var pageHeight = $(document).height() - 421;
-var scrollPercentage = scroll/pageHeight*100;
+var pageHeight = $(document).height();
+var scrollPercentage = scroll/(pageHeight - 421)*100;
 console.log(pageHeight-scroll);
 $('.progress-indicator').css("width", scrollPercentage + '%');
 
 
 
 // Active nav
+
+    if (scroll < pageHeight - 670) {
+      console.log(scroll);
+      console.log(pageHeight);
+      $(".fixed-nav").css("bottom", "0");
+    } else {
+      $(".fixed-nav").css("bottom", "66px");
+    }
 
     var o1 = $("#project1").offset().top;
     var o2 = $("#project2").offset().top;
@@ -55,6 +63,28 @@ $('.progress-indicator').css("width", scrollPercentage + '%');
     } else {
       $("#project-nav1").removeClass('active-nav');
     }
+    if (scroll >= o2 & scroll <= o3) {
+      $("#project-nav2").addClass('active-nav');
+    } else {
+      $("#project-nav2").removeClass('active-nav');
+    }
+    if (scroll >= o3 & scroll <= o4) {
+      $("#project-nav3").addClass('active-nav');
+    } else {
+      $("#project-nav3").removeClass('active-nav');
+    }
+    if (scroll >= o4 & scroll <= o5) {
+      $("#project-nav4").addClass('active-nav');
+    } else {
+      $("#project-nav4").removeClass('active-nav');
+    }
+    if (scroll >= o5) {
+      $("#project-nav5").addClass('active-nav');
+    } else {
+      $("#project-nav5").removeClass('active-nav');
+    }
+
+
   });
 
   // Smooth scroll
