@@ -84,7 +84,7 @@ padding-top: 40px;
   text-transform: uppercase;
   color: $theme-color;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .project-nav {
@@ -92,17 +92,19 @@ padding-top: 40px;
 
   ul li {
     display: inline-block;
-    text-transform: uppercase;
     padding: 4px 12px 4px 12px;
     margin: 4px 4px 4px 0;
     font-weight: 400;
-    border: 1px $grey-color-dark solid;
-    border-radius: 2px;
     font-size: 14px;
+    background-color: $grey-color-extra-light;
+  }
+
+  a {
+    color: $grey-color-dark;
   }
 
   ul li:hover {
-    border: 1px $grey-color-light solid;
+    background-color: #fff;
   }
 }
 
@@ -147,9 +149,14 @@ padding-top: 40px;
       margin-bottom: 18px;
     }
   }
-  .has-background {
-    background-color: $grey-color-extra-light;
+  .screenshots-wrap {
+    background-color: #fff;
     padding: 40px;
+
+    .screenshots-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
     .phone-chassis {
       width: 90%;
@@ -159,14 +166,30 @@ padding-top: 40px;
       border-radius: 36px;
       margin-bottom: 12px;
       background-color: #4a4a4a;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .full-width {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .is-hl-scroll {
+      width: 100%;
+      overflow-x: auto;
+      height: 500px;
+
+      img {
+        height: inherit;
+      }
     }
   }
-}
-.full-width-image img {
-  width: 100%;
-}
-.phone-chassis img {
-  width: 100%;
 }
 
 #up-btn-wrap {

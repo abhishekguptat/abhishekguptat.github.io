@@ -31,9 +31,8 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
 figure {
-  display: inline-block; }
-  figure img {
-    width: 100%; }
+  display: inline-block;
+  width: 100%; }
 
 figcaption {
   font-size: 14px; }
@@ -123,21 +122,21 @@ a {
   text-transform: uppercase;
   color: #FF3636;
   font-weight: 700;
-  margin-bottom: 32px; }
+  margin-bottom: 20px; }
 
 .project-nav {
   height: auto; }
   .project-nav ul li {
     display: inline-block;
-    text-transform: uppercase;
     padding: 4px 12px 4px 12px;
     margin: 4px 4px 4px 0;
     font-weight: 400;
-    border: 1px #333 solid;
-    border-radius: 2px;
-    font-size: 14px; }
+    font-size: 14px;
+    background-color: #ededed; }
+  .project-nav a {
+    color: #333; }
   .project-nav ul li:hover {
-    border: 1px #b9b9b9 solid; }
+    background-color: #fff; }
 
 .project-nav ul li.active-nav {
   background-color: #FF3636;
@@ -169,10 +168,13 @@ a {
         background-color: #ededed; }
     .project .text-block .project-desc {
       margin-bottom: 18px; }
-  .project .has-background {
-    background-color: #ededed;
+  .project .screenshots-wrap {
+    background-color: #fff;
     padding: 40px; }
-    .project .has-background .phone-chassis {
+    .project .screenshots-wrap .screenshots-title {
+      text-align: center;
+      margin-bottom: 40px; }
+    .project .screenshots-wrap .phone-chassis {
       width: 90%;
       border: 8px #333 solid;
       border-top-width: 48px;
@@ -180,12 +182,18 @@ a {
       border-radius: 36px;
       margin-bottom: 12px;
       background-color: #4a4a4a; }
-
-.full-width-image img {
-  width: 100%; }
-
-.phone-chassis img {
-  width: 100%; }
+      .project .screenshots-wrap .phone-chassis img {
+        width: 100%; }
+    .project .screenshots-wrap .full-width {
+      width: 100%; }
+      .project .screenshots-wrap .full-width img {
+        width: 100%; }
+    .project .screenshots-wrap .is-hl-scroll {
+      width: 100%;
+      overflow-x: auto;
+      height: 500px; }
+      .project .screenshots-wrap .is-hl-scroll img {
+        height: inherit; }
 
 #up-btn-wrap {
   text-align: center;
