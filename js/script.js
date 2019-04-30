@@ -51,15 +51,18 @@ $('.progress-indicator').css("width", scrollPercentage + '%');
 
 
 
-// Active nav
+// Set bottom position of fixed nav
 
     if (scroll < pageHeight - 670) {
       console.log(scroll);
       console.log(pageHeight);
       $(".fixed-nav").css("bottom", "0");
     } else {
-      $(".fixed-nav").css("bottom", "66px");
+      $(".fixed-nav").css("bottom", "41px");
     }
+
+
+// Active nav item
 
     var o1 = $("#project1").offset().top;
     var o2 = $("#project2").offset().top;
