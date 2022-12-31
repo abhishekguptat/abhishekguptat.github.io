@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// Set your brand colors
+$dark-green: #38761d;
+$green: #00ab44;
+$light-green: #f4fcf3;
+$white: #ffffff;
+
+// Update Bulma's global variables
+$family-sans-serif: "Lato", sans-serif;
+$primary: $green;
+$link: $green;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+$navbar-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$radius-large: 12px;
+
+.level.is-mobile.screen-flow {
+    overflow-x: auto;
+    align-items: baseline;
+    .screen {
+       margin-right: 48px; 
+    }
+}
+
+
+.chassis {
+    position: relative;
+    border-width: 6px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 48px;
+    padding-top: 40px;
+    padding-bottom: 48px;
+    background-color: black;
+    -webkit-box-shadow: 10px 10px 32px -6px rgba(176,176,176,1);
+    -moz-box-shadow: 10px 10px 32px -6px rgba(176,176,176,1);
+    box-shadow: 10px 10px 32px -6px rgba(176,176,176,1);
+    max-width: 360px;
+    height: auto;
+    display: block;
+    margin: auto;
+    .circle {
+        height: 40px;
+        width: 40px;
+        background-color: #424242;
+        border-radius: 100px;
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .chassis-top {
+        width: 48px;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        .circle-small {
+            height: 8px;
+            width: 8px;
+            background-color: #424242;
+            border-radius: 100px;
+        }
+        .line {
+            height: 6px;
+            width: 32px;
+            background-color: #424242;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+
+
+// Import only what you need from Bulma
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
