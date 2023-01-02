@@ -49,6 +49,18 @@
       background-color: #424242;
       border-radius: 8px; }
 
+.case-studies p {
+  color: #fff; }
+
+.case-studies .projecthero .box {
+  background-color: #000000; }
+
+.case-studies .zendrive .box {
+  background-color: #00cc9b; }
+
+.case-studies .truecaller .box {
+  background-color: #0087ff; }
+
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
 .file-name {
