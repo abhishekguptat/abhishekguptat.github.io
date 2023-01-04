@@ -40,12 +40,6 @@ $radius-large: 12px;
     }
 }
 
-.button.linkedin {
-    &:hover {
-        background-color: darken(#0066bf,10%);
-    }
-}
-
 .level.is-mobile.screen-flow {
     overflow-x: auto;
     align-items: baseline;

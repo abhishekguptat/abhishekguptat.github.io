@@ -103,9 +103,6 @@
   .logo:hover {
     color: #3db5c2; }
 
-.button.linkedin:hover {
-  background-color: #004b8c; }
-
 .level.is-mobile.screen-flow {
   overflow-x: auto;
   align-items: baseline; }
