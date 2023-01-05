@@ -228,6 +228,11 @@ p.highlighted-line {
   justify-content: center;
   align-items: center; }
 
+.scrollable-section {
+  overflow-x: scroll; }
+  .scrollable-section .scrollable-image {
+    width: 300%; }
+
 /* Bulma Base */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,

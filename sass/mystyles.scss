@@ -198,6 +198,13 @@ p.highlighted-line {
     justify-content: center;
     align-items: center;
 }
+.scrollable-section {
+    overflow-x: scroll;
+    .scrollable-image {
+        width: 300%;
+    }
+}
+
 
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
