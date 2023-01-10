@@ -8,14 +8,20 @@
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
 // Set your brand colors
 $cyan: #64C4CE;
 $light-green: #f4fcf3;
 $white: #ffffff;
 $grey-brand: #e9e9e9;
 
+// Set fonts variable
+$family-serif: "Lora", serif;
+
 // Update Bulma's global variables
 $family-sans-serif: "Inter", sans-serif;
+$family-secondary: $family-serif;
 $primary: $cyan;
 $link: $cyan;
 $widescreen-enabled: false;
@@ -29,6 +35,12 @@ $input-border-color: transparent;
 $input-shadow: none;
 $radius-large: 12px;
 
+h1,h2, h3 {
+    font-family: $family-secondary;
+}
+p,ul,li {
+    font-weight: 300;
+}
 .logo {
     font-weight: 800 !important;
     color: $cyan;
@@ -198,11 +210,45 @@ p.highlighted-line {
     justify-content: center;
     align-items: center;
 }
-.scrollable-section {
+.scrollable-image-wrapper {
     overflow-x: scroll;
+    border-radius: 16px;
+    box-shadow: 3px 3px 0px lightgrey;
+    border: 1px #EBEBEB solid;
+    padding: 8px;
     .scrollable-image {
+        width: 200%;
+    }
+    .scrollable-image-wide {
         width: 300%;
     }
+    .scrollable-image-wider {
+        width: 400%;
+    }
+}
+.has-border {
+    border-top: 1px #ebebeb solid;
+}
+.has-border-grey {
+    border-top: 1px #dcdcdc solid;
+}
+.role-projecthero {
+    padding: 16px;
+    background: #101010; 
+    border-top: 1px #333333 dashed;  
+}
+.role-truecaller {
+    padding: 16px;
+    background: #0683F1;
+    border-top: 1px #0D6FC7 dashed;
+    }
+.role-zendrive {
+    padding: 16px;
+    background: #F3F9F7;
+    border-top: 1px #D6E1DF dashed;
+}
+.has-background-zendrive-light {
+    background: #F3F9F7;
 }
 
 
@@ -214,4 +260,5 @@ p.highlighted-line {
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/bulma.sass";
 
