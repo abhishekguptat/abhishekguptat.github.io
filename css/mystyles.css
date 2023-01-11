@@ -203,7 +203,7 @@
   margin: 0;
   padding: 0; }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   font-family: "Lora", serif; }
 
 p, ul, li {
@@ -252,21 +252,25 @@ p, ul, li {
     margin: auto; }
   .chassis .chassis-top {
     width: 48px;
+    height: 8px;
     position: absolute;
-    top: 16px;
+    top: 8px;
     left: 0;
     right: 0;
     margin: auto; }
     .chassis .chassis-top .circle-small {
+      display: inline-block;
       height: 8px;
       width: 8px;
       background-color: #424242;
       border-radius: 100px; }
     .chassis .chassis-top .line {
-      height: 6px;
+      display: inline-block;
+      height: 7px;
       width: 32px;
       background-color: #424242;
-      border-radius: 8px; }
+      border-radius: 8px;
+      margin-right: 3px; }
 
 .case-studies {
   padding: 24px;
@@ -380,6 +384,16 @@ p.highlighted-line {
 .has-background-zendrive-light {
   background: #F3F9F7; }
 
+.has-background-projecthero-light {
+  background: #F8F7F2; }
+
+section.product-management .box {
+  background: #000;
+  color: #fff; }
+
+section.product-management h5 {
+  color: #efc41a; }
+
 /* Bulma Base */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
@@ -452,7 +466,7 @@ th {
     text-align: inherit; }
 
 html {
-  background-color: #e9e9e9;
+  background-color: white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -3976,7 +3990,7 @@ th {
     text-align: inherit; }
 
 html {
-  background-color: #e9e9e9;
+  background-color: white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
