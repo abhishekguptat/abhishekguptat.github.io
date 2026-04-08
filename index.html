@@ -48,7 +48,7 @@
 
       <section class="work-section">
         <div class="wrap">
-          <p class="section-label">Projects</p>
+          <p class="section-label">Work</p>
 
           <div class="case-cards">
 
@@ -194,10 +194,9 @@
           </div>
 
           <div class="timeline__cta">
-            <a class="btn btn--contact" href="https://drive.google.com/drive/folders/12lQcN2TFgOYgh_bBkx0LClEe-MKGQno3?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <button class="btn btn--contact" id="resumeBtn">
               <span>View Full Resume</span>
-              <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7em;"></i>
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -255,6 +254,25 @@
       </div>
     </footer>
 
+    <!-- Resume overlay -->
+    <div class="resume-overlay" id="resumeOverlay">
+      <div class="resume-overlay__header">
+        <span class="resume-overlay__title">Resume</span>
+        <div class="resume-overlay__actions">
+          <a class="btn btn--contact" href="resume/Abhishek%20Gupta%20Resume.pdf" download>
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </a>
+          <button class="resume-overlay__close" id="resumeClose" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="resume-overlay__body">
+        <iframe src="" id="resumeFrame" title="Resume"></iframe>
+      </div>
+    </div>
+
     <script>
       document.getElementById('contactBtn').addEventListener('click', function(e) {
         e.stopPropagation();
@@ -262,6 +280,34 @@
       });
       document.addEventListener('click', function() {
         document.getElementById('contactMenu').classList.remove('is-open');
+      });
+
+      // Resume overlay
+      var resumeOverlay = document.getElementById('resumeOverlay');
+      var resumeFrame = document.getElementById('resumeFrame');
+      document.getElementById('resumeBtn').addEventListener('click', function() {
+        resumeFrame.src = 'resume/Abhishek%20Gupta%20Resume.pdf';
+        resumeOverlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      });
+      document.getElementById('resumeClose').addEventListener('click', function() {
+        resumeOverlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+        resumeFrame.src = '';
+      });
+      resumeOverlay.addEventListener('click', function(e) {
+        if (e.target === resumeOverlay) {
+          resumeOverlay.classList.remove('is-open');
+          document.body.style.overflow = '';
+          resumeFrame.src = '';
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && resumeOverlay.classList.contains('is-open')) {
+          resumeOverlay.classList.remove('is-open');
+          document.body.style.overflow = '';
+          resumeFrame.src = '';
+        }
       });
     </script>
   </body>
