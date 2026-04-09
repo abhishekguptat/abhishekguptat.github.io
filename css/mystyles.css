@@ -300,7 +300,7 @@ button {
    ============================== */
 
 .work-section {
-  padding: 0 0 100px;
+  padding: 0 0 48px;
 }
 
 .case-cards {
@@ -377,13 +377,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 240px;
+  width: 280px;
   flex-shrink: 0;
 }
 
 .case-card__logo img {
   max-width: 100%;
-  max-height: 120px;
+  max-height: 150px;
 }
 
 /* ProjectHero card */
@@ -1209,7 +1209,7 @@ button {
   }
 
   .case-card__logo {
-    width: 120px;
+    width: 200px;
     order: -1;
   }
 
@@ -1232,7 +1232,7 @@ button {
   }
 
   .btn .btn-label {
-    display: none;
+    display: inline;
   }
 
   .cs-intro {
